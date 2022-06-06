@@ -1,0 +1,429 @@
+html,body{
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #ffffff; 
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+/*  --  Header   -- */
+
+.header-container{
+    background-color:#C4170C;
+    border: 1px solid #707070;
+
+    width: 100%;
+    margin: auto;
+}
+
+.menus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.menu-item a, .search-input{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.menu-list{
+    display: flex;
+    align-items:center;
+}
+
+.menu-list a{
+    margin: 10px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+
+    width: 150px;
+}
+
+.search-input{
+    background-color: #8B0000;
+    border: none;
+    outline: none;
+    border-radius: 0px 8px 8px 0px;
+    padding: 10px;
+    width: 100%;
+    max-width: 150px;
+}
+
+.search-icon{
+    background-color: #8B0000;
+    padding: 3px 0px 4px 3px;
+    border-radius: 8px 0px 0px 8px; 
+}
+
+.search-icon{
+    padding-left: 8px;
+}
+
+/*--   Main    -- */
+/* flexbox */
+
+.main{
+    width: 100vw;
+}
+
+.title-hero{
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 3.5rem;
+    text-transform: uppercase;
+
+    margin-top: 45px;
+    margin-bottom: 60px;   
+}
+
+/* grid 1 */
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 150px 95px;
+    margin: 0 100px 150px 100px;
+
+}
+.grid1 a{
+    text-decoration: none;
+    text-transform: bold;
+}
+
+.grid1 a p{ 
+    margin-top: 2px;
+    color: black;
+    
+}
+
+.grid1-item1{
+    grid-row: 1/3;
+    border: 1px solid #707070;
+    border-radius: 4px;  
+    width: 100%;   
+}
+
+.grid1-item1 div{
+    color:#8B0000;
+    
+    text-align: left;
+    padding-top: 200px;
+    padding-left: 32px;
+}
+
+.grid1-item1 h2{
+    margin-bottom: 0;
+    font-size: 3rem;
+}
+
+.grid1-item1 h2, p{
+   margin-top: 2px;
+}
+
+.grid1-item2 img{
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+
+.grid1-item3 img{
+    width: 100%;
+    padding-right: 0;
+}
+
+/* grid2 */
+
+.grid2{
+    margin:0 100px 150px 100px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+
+    border-bottom: 1px solid #707070;
+    margin-bottom: 60px;
+    padding-bottom: 80px;
+}
+
+.card img{
+    width: 100%;
+    min-width: 250px;
+   
+}
+
+.card .title-1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card .title-2{
+    font-size: 3.0rem;
+    color:#C4170C; 
+}
+
+.card .title-3{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.card .title-4{
+    font-size: 2.2rem;
+    color: #746565;
+}
+
+
+/* button */
+.button-card{
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    font-size: 2rem;
+    background-color: #C4170C;
+    color: #ffffff;
+    border: 1px solid #707070;
+    border-radius: 4px;
+
+    padding: 20px 80px 20px 80px;
+    margin: 0 auto;
+    margin-bottom: 180px;
+}
+
+/*  Footer */
+
+.footer-container{
+    background-color: #C4170C;
+    text-decoration: none;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    padding: 12px 40px 0px 40px;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.news p{
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 2.5rem;
+}
+
+.footer-ul{
+    list-style: none;
+}
+
+.footer-ul li{
+    display:inline;
+}
+
+.footer-ul .link1{
+    border-right: 1px solid white;
+    padding-right: 5px;
+}
+
+.footer-ul .link2{
+    border-right: 1px solid white;
+    padding-right: 5px;
+}
+
+.footer-ul .link3{
+    border-right: 1px solid white;
+    padding-right: 5px;
+}
+
+/* 
+        Responsive media querys
+ */
+
+@media screen and (max-width: 1100px){
+    .news{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1064px){
+    input::placeholder {
+        color: transparent;
+   }
+}
+
+@media screen and (max-width: 1050px){
+    .grid1{
+        grid-gap: 50px 50px;
+    }
+
+    .grid1-item1{
+        grid-row: 1/1;
+        grid-column: 1/3; 
+    }
+
+    .grid1-item1 div{
+        text-align: left;
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+    
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .title-hero{
+        font-size: 3rem
+    }
+
+    .grid-item1{
+        display: grid;
+        grid-template-rows:  1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .grid1-item2{
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+
+    .grid1-item3{
+        grid-column: 1/3;
+    }
+
+    .card-img{
+       grid-column: 1/3;
+    }
+
+    .card-text{
+        grid-column:1/3 ;
+    }  
+}
+@media screen and (max-width: 750px){
+    .title-hero{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .copyright{
+        display: none;
+    }
+
+    .footer-ul{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        line-height: 20px;
+        border: none;
+        text-align: center;
+    }
+
+    .footer-ul .link1{
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+        border-right: none;
+    }
+    
+    .footer-ul .link2{
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+        border-right: none;
+    }
+    
+    .footer-ul .link3{
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+        border-right: none;
+    } 
+}
+
+@media screen and (max-width: 500px){
+    .title-hero{
+        display: none;
+    }
+
+    .grid1{
+        margin: 5rem;
+    }
+
+    .grid1-item1 div{
+        text-align: left;
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
+    .grid2{
+        margin: 5rem;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .search{
+        width: 10%;
+    }
+    
+    .search-input{
+        display: none;
+    }
+
+    .search-icon{
+        padding: 5px;
+        border-radius: 8px; 
+    }
+}
+
+@media screen and (max-width: 360px){
+    .grid1{
+        margin: 1rem;
+    }
+
+    .grid2{
+        margin: 1rem;
+    }
+
+    .button-card{
+        margin: 2rem;
+    }
+}
+
+
+
